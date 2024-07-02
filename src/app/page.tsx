@@ -73,7 +73,7 @@ export default function Home() {
               </div>
             </div>
             <div className="mx-auto grid gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-              <div className="grid gap-4">
+              <div className="grid gap-4 shadow-md rounded-lg">
                 <Image
                   src="/placeholder.svg"
                   width="500"
@@ -81,7 +81,7 @@ export default function Home() {
                   alt="Project 1"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
                 />
-                <div className="space-y-2">
+                <div className="space-y-2 p-4">
                   <h3 className="text-xl font-bold">Project 1</h3>
                   <p className="text-muted-foreground">
                     A modern web application built with React, Next.js, and
@@ -89,34 +89,21 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="grid gap-4">
-                <Image
-                  src="/placeholder.svg"
-                  width="500"
-                  height="300"
-                  alt="Project 2"
-                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
-                />
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Project 2</h3>
-                  <p className="text-muted-foreground">
-                    A full-stack web application with a Node.js backend and a
-                    React frontend.
-                  </p>
-                </div>
-              </div>
-              <div className="grid gap-4">
-                <Image
-                  src="/placeholder.svg"
-                  width="500"
-                  height="300"
-                  alt="Project 3"
-                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
-                />
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Project 3</h3>
-                  <p className="text-muted-foreground">
-                    A data visualization dashboard built with React and D3.js.
+            </div>
+          </div>
+        </section>
+        <section id="additional-projects" className="py-20 md:py-32">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
+              Other Projects
+            </h2>
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-background rounded-lg overflow-hidden shadow-md">
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Project 4</h3>
+                  <p className="text-muted-foreground mb-4">
+                    A web application that helps users manage their personal
+                    finances.
                   </p>
                 </div>
               </div>
