@@ -8,8 +8,8 @@ import { OtherProjectTile } from "@/components/OtherProjectTile";
 export default function Home() {
   return (
     <div>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <section className="w-full py-12 md:py-24 lg:py-32">
+      <main className="flex min-h-screen flex-col items-center justify-between ">
+        <section className="w-full min-h-screen p-24 py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6 grid gap-4 lg:grid-cols-2 lg:gap-4 justify-center">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
@@ -62,14 +62,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="w-full py-12 p-24 md:py-24 lg:py-32 muted-bg">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Featured Projects
                 </h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[900px] text-muted md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Check out some of my recent projects that showcase my skills
                   and expertise.
                 </p>
@@ -84,7 +84,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="additional-projects" className="py-20 md:py-32">
+        <section id="additional-projects" className="py-20 p-24 md:py-32">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
               Other Projects
