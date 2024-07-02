@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { skills } from "./data/skills";
+import { ProjectTile } from "@/components/ProjectTile";
+import { OtherProjectTile } from "@/components/OtherProjectTile";
 
 export default function Home() {
   return (
@@ -55,6 +57,7 @@ export default function Home() {
                 height="400"
                 alt="About"
                 className="mx-auto aspect-square overflow-hidden rounded-xl object-cover"
+                priority
               />
             </div>
           </div>
@@ -73,22 +76,11 @@ export default function Home() {
               </div>
             </div>
             <div className="mx-auto grid gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-              <div className="grid gap-4 shadow-md rounded-lg">
-                <Image
-                  src="/placeholder.svg"
-                  width="500"
-                  height="300"
-                  alt="Project 1"
-                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
-                />
-                <div className="space-y-2 p-4">
-                  <h3 className="text-xl font-bold">Project 1</h3>
-                  <p className="text-muted-foreground">
-                    A modern web application built with React, Next.js, and
-                    Tailwind CSS.
-                  </p>
-                </div>
-              </div>
+              <ProjectTile
+                title="Project 1"
+                description="A modern web application built with React, Next.js, and Tailwind CSS."
+                imageSrc="/placeholder.svg"
+              />
             </div>
           </div>
         </section>
@@ -98,15 +90,10 @@ export default function Home() {
               Other Projects
             </h2>
             <div className="grid grid-cols-1 gap-4">
-              <div className="bg-background rounded-lg overflow-hidden shadow-md">
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Project 4</h3>
-                  <p className="text-muted-foreground mb-4">
-                    A web application that helps users manage their personal
-                    finances.
-                  </p>
-                </div>
-              </div>
+              <OtherProjectTile
+                title="Other Project 1"
+                description="A web application that helps users manage their personal finances."
+              />
             </div>
           </div>
         </section>
