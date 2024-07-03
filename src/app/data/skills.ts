@@ -1,4 +1,4 @@
-export const skills = [
+export const programmingLanguages = [
   "TypeScript",
   "JavaScript",
   "C#",
@@ -10,9 +10,11 @@ export const skills = [
   "Python",
   "HTML5/CSS",
   "PHP",
-  "MongoDB",
-  "PostgreSQL",
-  "MySQL",
+];
+
+export const databases = ["MongoDB", "PostgreSQL", "MySQL"];
+
+export const frameworks = [
   "Next.js",
   "Tailwind CSS",
   ".NET",
@@ -27,8 +29,11 @@ export const skills = [
   "ReactJS",
   "Angular",
   "Bootstrap",
-  // "OpenCV",
-  // "Unity",
+  "OpenCV",
+  "Unity",
+];
+
+export const tools = [
   "Visual Studio Code",
   "Visual Studio",
   "Azure",
@@ -40,11 +45,15 @@ export const skills = [
   "Git",
   "jQuery",
   "Unix",
-  // "Do-More Designer",
-  // "Adobe Creative Suite: Premiere Pro",
-  // "After Effects",
-  // "Illustrator",
-  // "Photoshop",
-  // "XD",
-  // "Dreamweaver",
+  "Do-More Designer",
+];
+
+export const uxSoftware = [
+  "Adobe Creative Suite",
+  "Premiere Pro",
+  "After Effects",
+  "Illustrator",
+  "Photoshop",
+  "XD",
+  "Dreamweaver",
 ];

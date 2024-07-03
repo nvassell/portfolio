@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
-import { skills } from "./data/skills";
 import { ProjectTile } from "@/components/ProjectTile";
 import { OtherProjectTile } from "@/components/OtherProjectTile";
+import { Skills } from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -37,16 +36,7 @@ export default function Home() {
                       Lewis-Clark State College
                     </p>
                   </div>
-                  <div className="grid gap-1">
-                    <h3 className="text-xl font-bold">Skills</h3>
-                    <div className="flex flex-wrap gap-2">
-                      {skills.map((skill, index) => (
-                        <Badge key={index} variant="primary">
-                          {skill}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
+                  <Skills />
                 </div>
               </div>
             </div>
