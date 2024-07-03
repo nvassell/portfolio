@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ProjectTile } from "@/components/ProjectTile";
 import { OtherProjectTile } from "@/components/OtherProjectTile";
 import { Skills } from "@/components/Skills";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -52,7 +53,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 p-24 md:py-24 lg:py-32 muted-bg">
+        <section className="w-full py-12 p-24 md:py-24 lg:py-32 muted-bg min-h-screen">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -74,7 +75,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="additional-projects" className="py-20 p-24 md:py-32">
+        <section
+          id="additional-projects"
+          className="py-20 p-24 md:py-32 min-h-screen"
+        >
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
               Other Projects
@@ -88,27 +92,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-muted">
-          &copy; 2024 Nathan Vassell. All rights reserved.
-        </p>
-        {/* <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link
-            href="#"
-            className="text-xs hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Terms of Service
-          </Link>
-          <Link
-            href="#"
-            className="text-xs hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Privacy
-          </Link>
-        </nav> */}
-      </footer>
+      <Footer />
     </div>
   );
 }
