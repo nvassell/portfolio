@@ -13,7 +13,7 @@ export const ProjectTile: React.FC<ProjectProps> = ({
   imageSrc,
 }) => {
   return (
-    <div className="grid gap-4 shadow-md rounded-lg">
+    <div className="grid gap-4 shadow-md rounded-lg hover:-translate-y-2 hover:shadow-lg transition-transform duration-300">
       <Image
         src={imageSrc}
         width="500"

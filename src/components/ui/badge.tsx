@@ -8,7 +8,7 @@ const badgeVariants = cva(
   {
     variants: {
       variant: {
-        primary: "",
+        primary: "transition duration-300 ease-in-out hover:bg-[hsl(0,0%,80%)]",
         default:
           "border-transparent bg-primary text-primary-foreground hover:bg-primary/80",
         secondary:

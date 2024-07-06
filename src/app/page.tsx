@@ -17,7 +17,7 @@ export default function Home() {
                   Nathan Vassell
                 </h1>
                 <p className="max-w-[600px] md:text-xl">Software Engineer</p>
-                <p className="max-w-[600px] text-muted md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="max-w-[600px] text-muted md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed">
                   I am passionate about building modern, scalable, and
                   user-friendly web applications. My experience includes working
                   with a variety of technologies, such as React, Node.js, and
@@ -26,13 +26,13 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <div className="grid gap-4">
-                  <div className="grid gap-1">
+                  <div className="grid gap-1 text-base">
                     <h3 className="text-xl font-bold">Education</h3>
-                    <p className="text-muted">
+                    <p className="text-muted ml-4">
                       Bachelor of Science in Computer Science, University of
                       Idaho
                     </p>
-                    <p className="text-muted">
+                    <p className="text-muted ml-4">
                       Associates of Science in Web Design and Development,
                       Lewis-Clark State College
                     </p>
