@@ -4,6 +4,7 @@ import { ProjectTile } from "@/components/ProjectTile";
 import { OtherProjectTile } from "@/components/OtherProjectTile";
 import { Skills } from "@/components/Skills";
 import { Footer } from "@/components/Footer";
+import * as Projects from "./data/projects";
 
 export default function Home() {
   return (
@@ -67,11 +68,9 @@ export default function Home() {
               </div>
             </div>
             <div className="mx-auto grid gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-              <ProjectTile
-                title="Project 1"
-                description="A modern web application built with React, Next.js, and Tailwind CSS."
-                imageSrc="/placeholder.svg"
-              />
+              {Projects.featuredProjects.map((project) => (
+                <ProjectTile {...project} />
+              ))}
             </div>
           </div>
         </section>
@@ -84,10 +83,9 @@ export default function Home() {
               Other Projects
             </h2>
             <div className="grid grid-cols-1 gap-4">
-              <OtherProjectTile
-                title="Other Project 1"
-                description="A web application that helps users manage their personal finances."
-              />
+              {Projects.otherProjects.map((project) => (
+                <OtherProjectTile {...project} />
+              ))}
             </div>
           </div>
         </section>
