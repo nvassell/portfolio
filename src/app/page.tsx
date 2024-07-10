@@ -18,12 +18,12 @@ export default function Home() {
                   Nathan Vassell
                 </h1>
                 <p className="max-w-[600px] md:text-xl">Software Engineer</p>
-                <p className="max-w-[600px] text-muted md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed">
+                {/* <p className="max-w-[600px] text-muted md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed">
                   I am passionate about building modern, scalable, and
                   user-friendly web applications. My experience includes working
                   with a variety of technologies, such as React, Node.js, and
                   Tailwind CSS.
-                </p>
+                </p> */}
               </div>
               <div className="space-y-4">
                 <div className="grid gap-4">
