@@ -68,8 +68,8 @@ export default function Home() {
               </div>
             </div>
             <div className="mx-auto grid gap-6 py-12 lg:grid-cols-3 lg:gap-12">
-              {Projects.featuredProjects.map((project) => (
-                <ProjectTile {...project} />
+              {Projects.featuredProjects.map((project, index) => (
+                <ProjectTile key={index} {...project} />
               ))}
             </div>
           </div>
@@ -83,8 +83,8 @@ export default function Home() {
               Other Projects
             </h2>
             <div className="grid grid-cols-1 gap-4">
-              {Projects.otherProjects.map((project) => (
-                <OtherProjectTile {...project} />
+              {Projects.otherProjects.map((project, index) => (
+                <OtherProjectTile key={index} {...project} />
               ))}
             </div>
           </div>
