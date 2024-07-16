@@ -9,12 +9,12 @@ import * as Projects from "./data/projects";
 export default function Home() {
   return (
     <div>
-      <main className="flex min-h-screen flex-col items-center justify-between ">
-        <section className="w-full min-h-screen p-24 py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6 grid gap-4 lg:grid-cols-2 lg:gap-4 justify-center">
+      <main className="flex min-h-screen flex-col items-center justify-between">
+        <section className="w-full min-h-screen flex items-center justify-center p-24 py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6 grid gap-4 lg:grid-cols-2 lg:gap-4 justify-center items-center">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl">
                   Nathan Vassell
                 </h1>
                 <p className="max-w-[600px] md:text-xl">Software Engineer</p>
