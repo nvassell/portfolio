@@ -11,19 +11,13 @@ export default function Home() {
     <div>
       <main className="flex min-h-screen flex-col items-center justify-between">
         <section className="w-full min-h-screen flex items-center justify-center p-24 py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6 grid gap-4 lg:grid-cols-2 lg:gap-4 justify-center items-center">
+          <div className="container px-4 md:px-6 grid gap-4 lg:grid-cols-2 lg:gap-4">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl">
                   Nathan Vassell
                 </h1>
                 <p className="max-w-[600px] md:text-xl">Software Engineer</p>
-                {/* <p className="max-w-[600px] text-muted md:text-base/relaxed lg:text-base/relaxed xl:text-base/relaxed">
-                  I am passionate about building modern, scalable, and
-                  user-friendly web applications. My experience includes working
-                  with a variety of technologies, such as React, Node.js, and
-                  Tailwind CSS.
-                </p> */}
               </div>
               <div className="space-y-4">
                 <div className="grid gap-4">
@@ -54,7 +48,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 p-24 md:py-24 lg:py-32 muted-bg min-h-screen">
+        <section className="w-full min-h-screen flex items-center muted-bg justify-center p-24 py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
